@@ -1,0 +1,119 @@
+<!-- This is the landing page for the Web Visualization Dashboard -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization Dashboard - Comparison</title>
+    
+    <!-- Bring in bootstrap stylesheet -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    
+    <!-- bootswatch theme: superhero -->
+    <link rel="stylesheet" href="./css/superhero_bootstrap.css">
+
+    <!-- additional css for images -->
+    <link rel="stylesheet" href="./css/viz-css.css">
+
+    <!-- Bootstrap javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- navbar at top -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+            
+        <!-- site header -->   
+        <a class="navbar-brand color-back" href="index.html"><h1>Latitude</h1></a>
+        
+        <!-- collapsed navbar menu button that toggles on when screen size is sm or xs -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- navbar items -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Comparison<span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+                
+                <!-- dropdown list for plots -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                    </a>
+
+                    <!-- dropdown list items -->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="plot1.html">Max Temp</a>
+                        <a class="dropdown-item" href="plot2.html">Cloudiness</a>
+                        <a class="dropdown-item" href="plot3.html">Humidity</a>
+                        <a class="dropdown-item" href="plot4.html">Wind Speed</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+       
+    <!-- ----------------------------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+    <!-- Container for content -->
+    <div class='container comparison'>
+        <br>
+        <!-- Header Row -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8 comparison-header">
+                <h2><strong>Comparison: Latitude vs X</strong></h2>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+                Click any plot for in-depth analysis.
+            </div>
+        </div>
+        
+        
+        <!-- 2 Viz Rows-->
+        <!-- Visualizations in grid -->
+        <!-- (each plot image is a link to that plot's page) -->
+        <!-- plots are justified to center -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6 text-center comparison-viz">
+                <h3>Plot 1</h3>
+                <a href="plot1.html" class="d-flex justify-content-center"> <img src="./Resources/Max_Temp.png" alt="[visualisation]" class="viz viz-main"> </a>
+            </div>
+            <div class="col-md-6 text-center comparison-viz">    
+                <h3>Plot 2</h3>
+                <a href="plot2.html" class="d-flex justify-content-center"> <img src="./Resources/Cloudiness.png" alt="[visualisation]" class="viz viz-main"> </a>
+            </div>
+        </div>    
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6 text-center comparison-viz">
+                <h3>Plot 3</h3>
+                <a href="plot3.html" class="d-flex justify-content-center"> <img src="./Resources/Humidity.png" alt="[visualisation]" class="viz viz-main"> </a>
+            </div>
+            <div class="col-md-6 text-center comparison-viz">
+                <h3>Plot 4</h3>
+                <a href="plot4.html" class="d-flex justify-content-center"> <img src="./Resources/Wind_Speed.png" alt="[visualisation]" class="viz viz-main"> </a>
+            </div>
+        </div>
+   </div>
+
+
+</body>
+
+</html>

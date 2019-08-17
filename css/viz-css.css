@@ -1,0 +1,51 @@
+/*  Additional css for the Web Visualization Dashboard  */
+
+
+.viz-card {
+    margin: 5px;
+    max-width: 250px;
+    width: 50%;
+    min-width: 100px;
+    padding: 5px;
+}
+
+.viz-summary {
+    margin-right: 15px;
+    max-width: 400px;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.viz-main {
+    height: auto;
+    max-width: 700px;
+    width: 100%;
+    margin: 20px;
+}
+
+.comparison {
+    background: #4E5D6C;
+}
+
+.comparison-viz {
+    padding: 25px;
+    border-bottom: #DF691A;
+}
+
+.comparison-header{
+    background: rgba(255, 255, 255, 0.075);
+    padding: 15px;
+}
+
+.viz-center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 75%;
+}
+
+.color-back {
+    background: lightblue;
+    padding: 5px;
+}
